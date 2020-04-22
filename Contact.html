@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+<head>
+    <!--Made by Daniel Alan Dietzman -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPI Sport Performance</title>
+<link rel="shortcut icon" type="image/png" href="media/SPI.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="FontAwesome/css/all.min.css">
+<link rel="stylesheet" href="Fonts/stylesheet.css">
+<style>
+hr {
+    display: block;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0px;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-style: inset;
+    border-width: 1px;
+}
+
+h1 {
+    font-family: bio_sansbold;
+}
+
+p {
+    font-family: bio_sansextralight;
+}
+
+h2 {
+    font-family:bio_sanssemibold ;
+}
+a{
+    font-family: bio_sansregular;
+}
+
+.B{
+    display: none;
+}
+
+body{
+    background-image: url("media/Origi BG.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0% -35%;
+}
+#main{margin-top:12%; padding:48px 96px;}
+#foot{margin-top:23%;}
+@media only screen and (max-width: 600px) {#main{margin-top: 5%; padding: 8px 16px;} #foot{margin-top: 5%;} body{background-position: 30% 0%; background-repeat: repeat;}} 
+</style>
+</head>
+<body class="w3-black">
+        <!-- NAV BAR FOR LARGE & MEDIUM SCREENS  -->
+        <div class="w3-top  w3-black w3-hide-small">
+            <div class="w3-bar w3-xlarge w3-container w3-mobile">
+                <img class="w3-bar-item w3-left"src="media/SPI FINAL.png" style="width:150px;">
+                <div class="w3-padding-32" >
+                <a href="#" class="w3-bar-item w3-button w3-right w3-hover-none w3-hover-text-red">CONTACT</a>
+                <a href="Social.html" class="w3-bar-item w3-button w3-right w3-hover-none w3-hover-text-red">SOCIAL</a>
+                <a href="Trainers.html" class="w3-bar-item w3-button w3-right w3-hover-none w3-hover-text-red ">TRAINERS</a>
+                <a href="Clients.html" class="w3-bar-item w3-button w3-right w3-hover-none w3-hover-text-red">CLIENTS</a>
+                <a href="Index.html" class="w3-bar-item w3-button w3-right w3-hover-none w3-hover-text-red">HOME</a>
+                </div>
+                
+            </div>
+            <hr>
+        </div>
+    
+        <!-- NAV BAR FOR SMALL SCREEN e.g. Mobile  -->
+        <div class="w3-top w3-hide-large w3-hide-medium w3-center">
+            <div class="w3-bar w3-center w3-small">
+                <a href="Index.html" class="w3-bar-item w3-button">HOME</a>
+                <a href="Clients.html" class="w3-bar-item w3-button">CLIENTS</a>
+                <a href="Trainers.html" class="w3-bar-item w3-button">TRAINERS</a>
+                <a href="Social.html" class="w3-bar-item w3-button">SOCIAL</a>
+            </div>
+        </div>
+
+
+        <!-- SOCIAL SIDE BAR -->
+      <!--   <div id="bar" class="A w3-sidebar w3-black w3-hide-small" style="width:32px; right:0; height: auto; margin-top: 200px;" > 
+        <button id="button" class="w3-button w3-center w3-large w3-right w3-black" onclick="Open()">
+        <i id="icon" class="fas fa-angle-left"></i>
+        </button>
+        <div id="sidebar" class="B w3-sidebar w3-bar-block w3-black w3-xxlarge w3-hide-small w3-animate-right" 
+             style=" width:70px; height: auto; right:0;">
+            <a href="https://www.instagram.com/spisportsperformance/" class="w3-bar-item" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/spisportsperformance" class="w3-bar-item" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/36125971/" class="w3-bar-item" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        </div> -->
+
+
+    <!--MAIN BODY-->
+    <div id="main" class="w3-main">
+        <header class="w3-content w3-container w3-center">
+        <h1 class="w3-xxlarge w3-margin">CONTACT</h1>
+        </header>
+        
+        <!--SOCIALS BAR  (Ask About Target open social in new window or same window
+            Also can add padding to name but will look wierd on mobile )-->
+        <div class="w3-row-padding w3-padding w3-center" style="margin-top: 5%;">
+            <div class="w3-third">
+                <i class="fa fa-envelope fa-7x "></i>
+                <p class="w3-large">DAVIDYCHANPARK@GMAIL.COM</p>
+            </div>
+
+            <div class="w3-third">
+                <i class="fas fa-map-marker-alt fa-7x "></i>
+                <p class="w3-large w3-center">
+                    LOS ANGELES & ORANGE COUNTY <br>CA
+                </p>
+            </div>
+
+            <div class="w3-third">
+                <i class="fa fa-phone-alt fa-7x "></i>
+                <p class="w3-large">+17144766587</p>
+            </div>
+        </div>
+
+
+        <footer id="foot" class="w3-container w3-center">
+            <p class="w3-tiny">&copy; SPI SPORTS PERFORMANCE 2019. ALL RIGHTS RESERVED</p>
+            
+        </footer>
+    </div>
+
+    <!-- SOCIAL BAR BUTTON METHOD -->
+<!-- <script>
+
+    var Shown = 0;
+    
+    function Open(){
+        if(Shown == 0)
+        {
+        document.getElementById("bar").style.width = "100px";
+        document.getElementById("button").style.marginRight="70%";
+        document.getElementById("icon").className ="fas fa-angle-right";
+        document.getElementById("sidebar").style.display="block";
+        Shown = 1;
+        }
+        else
+        {
+            document.getElementById("bar").style.width = "32px";
+            document.getElementById("button").style.marginRight="0";
+            document.getElementById("icon").className ="fas fa-angle-left";
+            document.getElementById("sidebar").style.display="none";
+            Shown = 0;
+        }
+    }
+</script> -->
+</body>
+</html>
