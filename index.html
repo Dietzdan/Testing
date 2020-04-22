@@ -1,159 +1,233 @@
 <!DOCTYPE html>
 <html lang="en-UK">
 <head>
+<!--Made by Daniel Alan Dietzman -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Daniel Dietzmans Online Portfolio</title>
+<title>SPI Sport Performance</title>
+<link rel="shortcut icon" type="image/png" href="media/SPI.png">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="Font/css/all.min.css">
+<link rel="stylesheet" href="FontAwesome/css/all.min.css">
+<link rel="stylesheet" href="Fonts/stylesheet.css">
 <style>
-a{text-decoration: none;}
-#main{margin-left:10%;}
-@media only screen and (max-width: 600px) {#main{margin-left: 0;}} 
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0px;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-style: inset;
+    border-width: 1px;
+}
+
+
+.container:hover .location{
+    opacity:0.75;
+}
+
+.container:hover .overlay{
+    opacity:1;
+}
+
+h1 {
+    font-family: bio_sansbold;
+}
+
+p {
+    font-family: bio_sansextralight;
+}
+
+h2 {
+    font-family:bio_sanssemibold ;
+}
+a{
+    font-family: bio_sansregular;
+}
+
+
+.B{
+    display: none;
+}
+
+body{
+    background-image: url("media/Origi BG.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: 0% -35%;
+}
+
+iframe{
+    margin-top: 2%;
+    margin-bottom:2%
+}
+
+#main{margin-top:10%; padding:24px 96px;}
+@media only screen and (max-width: 600px) {#main{margin-top: 5%; padding: 8px 16px; }#Loc{margin-top: 2%} body{background-position: 30% 0%; background-repeat: repeat;} iframe{ margin-top:0; margin-bottom:2%;}} 
 </style>
 </head>
-
-<body class="w3-blue w3-display-container">
-    <!--Nav Side Bar Here-->
-    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-blue w3-center" style="width:10%;"> 
-        <img class="w3-circle w3-bar-item"src="media/Profile Picture.jpeg" style="width:100%; opacity:75%;">
-        <a href="#main" class="w3-bar-item w3-button w3-hover-white">
-        <i class="fa fa-home w3-xxlarge"></i>
-        <p>HOME</p>
-        </a>
-        <a href="Projects.html" class="w3-bar-item w3-button w3-hover-white">
-        <i class="fa fa-folder w3-xxlarge"></i>
-        <p>PROJECTS</p>
-        </a>
-        <a href="#about" class="w3-bar-item w3-button w3-hover-white">
-        <i class="fa fa-user w3-xxlarge"></i>
-        <p>ABOUT</p>
-        </a>
-        <a href="#contact" class="w3-bar-item w3-button w3-hover-white">
-        <i class="fa fa-envelope w3-xxlarge"></i>
-        <p>CONTACT</p>
-        </a>
-        <div class="w3-center w3-display-bottomleft w3-panel w3-medium">
-            <a href="https://www.linkedin.com/in/daniel-dietzman-b3a64a163/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="text-decoration: none;" >
-            <i class="fab fa-linkedin" ></i>
-            </a>
-            <a href="https://www.instagram.com/thedietzdan/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="text-decoration: none;">
-            <i class="fab fa-instagram" ></i>
-            </a>
-            <a href="#" target="_blank" class="w3-opacity w3-hover-opacity-off" style="text-decoration: none;">
-            <i class="fab fa-facebook" ></i>
-            </a>
-            <a href="https://twitter.com/TheDietZDan" target="_blank" class="w3-opacity w3-hover-opacity-off" style="text-decoration: none;">
-            <i class="fab fa-twitter" ></i>
-            </a>
-            <a href="https://github.com/Dietzdan?tab=repositories" target="_blank" class="w3-opacity w3-hover-opacity-off" style="text-decoration: none;">
-            <i class="fab fa-github"></i>
-            </a>
+<body class="w3-black">
+    <!-- NAV BAR FOR LARGE & MEDIUM SCREENS NOTE ONLY USING WHITE BECAUSE LOGO IS BLACK MIGHT CHANGE  -->
+    <div class="w3-top w3-black w3-hide-small">
+        <div class="w3-bar w3-black w3-xlarge w3-container w3-mobile">
+            <img class="w3-bar-item w3-left"src="media/SPI FINAL.png" style="width:150px;">
+            <div class="w3-padding-32" >
+            <a href="Contact.html" class="w3-bar-item w3-button w3-right w3-hover-none w3-hover-text-red">CONTACT</a>
+            <a href="Social.html" class="w3-bar-item w3-button w3-right w3-hover-none w3-hover-text-red">SOCIAL</a>
+            <a href="Trainers.html" class="w3-bar-item w3-button w3-right w3-hover-none w3-hover-text-red ">TRAINERS</a>
+            <a href="Clients.html" class="w3-bar-item w3-button w3-right w3-hover-none w3-hover-text-red">CLIENTS</a>
+            <a href="#" class="w3-bar-item w3-button w3-right w3-hover-none w3-hover-text-red">HOME</a>
+            </div>
+            
         </div>
-    </nav>
+        <hr>
+    </div>
 
-    <!-- Horizontal Nav for phones-->
+    <!-- NAV BAR FOR SMALL SCREEN e.g. Mobile  -->
     <div class="w3-top w3-hide-large w3-hide-medium w3-center">
-        <div class="w3-bar w3-blue w3-opacity w3-center w3-small">
-            <a href="#main" class="w3-bar-item w3-button">HOME</a>
-            <a href="projects.html#main" class="w3-bar-item w3-button">PROJECTS</a>
-            <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-            <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+        <div class="w3-bar w3-center w3-small">
+            <a href="Clients.html" class="w3-bar-item w3-button">CLIENTS</a>
+            <a href="Trainers.html" class="w3-bar-item w3-button">TRAINERS</a>
+            <a href="Social.html" class="w3-bar-item w3-button">SOCIAL</a>
+            <a href="Contact.html" class="w3-bar-item w3-button">CONTACT</a>
         </div>
     </div>
 
-    <!-- Main Content Here -->
-    <!-- 10% for side bar space -->
-    <div id="main">
-<header class="w3-container  w3-center">
-    <h1 class="w3-jumbo"> Daniel Dietzman </h1>
-    <p> Games Designer and Programmer </p>
-</header>
-<section class="w3-container w3-center">
-    <img class="w3-circle" src="media/Profile Picture.jpeg" style="height: 20%; width: 20%;">
-</section>
-<!--Recent Section-->
-<section class="w3-container ">
-<h2 class="w3-leftbar w3-border-white w3-padding">Recent </h2>
+    <!-- SOCIAL SIDE BAR -->
+  <!--   <div id="bar" class="A w3-sidebar w3-black w3-hide-small" style="width:32px; right:0; height: auto; margin-top: 220px;" > 
+    <button id="button" class="w3-button w3-center w3-large w3-right w3-black" onclick="Open()">
+    <i id="icon" class="fas fa-angle-left"></i>
+    </button>
+    <div id="sidebar" class="B w3-sidebar w3-bar-block w3-black w3-xxlarge w3-hide-small w3-animate-right" 
+         style=" width:70px; height: auto; right:0;">
+        <a href="https://www.instagram.com/spisportsperformance/" class="w3-bar-item" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
 
-<section class="w3-container w3-third w3-section">
-<a href="projects.html#web">
-<div class="w3-card-4 w3-round-xlarge w3-white">
-  <img src="media/website.png" alt="This websites Homepage" style="max-width:100%; max-height: 100%;">
-  <div class="w3-container">
-  <h4>Portfolio Website</h4>
-  <p> Using HTML, CSS and the W3.CCS framework I created this site to be used as a showcase of my completed projects</p>
-</div>
-</a>
-</div>
+        <a href="https://www.facebook.com/spisportsperformance" class="w3-bar-item" target="_blank">
+            <i class="fab fa-facebook"></i>
+        </a>
 
-</section>
-<section class="w3-container w3-third w3-section">
-<div class="w3-card-4 w3-white w3-round-xlarge">
-    <video controls muted style="max-height:100%; max-width:100%;">
-        <source src="media/GameFinalPC.mp4" type="video/mp4">
-    </video>
-    <!-- Link below the video seems to work better -->
-    <a href="projects.html#shootout">
-    <div class="w3-container">
-    <h4>PrettyMuch vs CNCO Shootout - Game Design</h4>
-    <p  >Small browser based game I designed with the team at Project XIV to promote the two bands' collaboration single. </p>
+        <a href="https://www.linkedin.com/company/36125971/" class="w3-bar-item" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
+    </div> -->
+    
+ <!-- MAIN BODY -->
+ <div id="main" class="w3-main">
+    <!--SHOW REEL-->
+    
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/IRDoCxrim2A?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class= "w3-container  w3-center w3-content">
+        <h1 class="w3-xlarge" >ABOUT</h1>
+        <p class="w3-center w3-large">Nicky Holender started SPI (Sports Performance Improvement) training with a mission to create a company whose sole purpose is to help players develop all facets of their game.
+            Our team pushes every player to his or her maximum potential through a complete, holistic approach. 
+            Performance reviews, one-on-one analysis, remote live workouts, in-person field and gym sessions are all tailored with short-term and long-term goals to improve our clients. 
+            We focus on the complete person and player, from individual physical, technical, tactical, and mental ability.
+            Nicky and his team do not just run players through reps; we actively improve all of our clients’ game from the inside out with specific and precise exercises designed for each individual player.
+            Every season, the players improve their ability then raise their teams to a new level, as we help players use the season to actively enhance their game. 
+            We nurture young, elite talent and experienced pros to bring out every last drop of their potential to then increase their performance to new heights. 
+            SPI Sports Performance led by Nicky Holender is your solution to maximizing your potential as a complete player.
+           </p>
+ </div>
+    <hr>
+
+ <div class= "w3-container  w3-center w3-content" style="margin-top: 3%;">
+     <h1 class="w3-xlarge" >INTERNATIONAL</h1>
+     <p class="w3-center w3-large">SPI is an international sports training service able to train players across all leagues around the globe in multiple locations. 
+         See some of our most popular locations below.</p>
+ </div>
+<!-- LOCATION GRID -->
+<div id="Loc" class="w3-row-padding w3-padding-16 w3-center">
+    <div  class="w3-third w3-display-container container">
+        <img class="w3-round-large location" src="media/London City Edition Compressed.jpg" alt="UK" style ="width:100%">
+        <div class ="w3-display-hover">
+        <div class="w3-display-middle w3-display-hover overlay w3-animate-opacity">
+            <p class="w3-large" style="font-family: bio_sanssemibold;" >LONDON</p>
+            <hr>
+            <h1 class="w3-xlarge">UNITED KINGDOM</h1>
+        </div>
+        </div>
+    </div>
+    <div id="Loc" class="w3-third w3-display-container container">
+        <img class="w3-round-large location" src="media/LA City Edition Compressed.jpg" alt="California Pitch" style="width:100%;">
+        <div class ="w3-display-hover">
+            <div class="w3-display-middle w3-display-hover overlay w3-animate-opacity">
+                <p class="w3-large" style="font-family: bio_sanssemibold;">CALIFORNIA</p>
+                <hr>
+                <h1 class="w3-xlarge">UNITED STATES OF AMERICA</h1>
+            </div>
+        </div>
+    </div>
+    <div id="Loc" class="w3-third w3-display-container container">
+        <img class="w3-round-large location" src="media/Seoul City Edition Compressed.jpg" alt="South Korea Pitch" style ="width:100%;">
+        <div class ="w3-display-hover">
+            <div class="w3-display-middle w3-display-hover overlay w3-animate-opacity">
+                <p class="w3-large" style="font-family: bio_sanssemibold;">SEOUL</p>
+                <hr>
+                <h1 class="w3-xlarge">SOUTH KOREA</h1>
+            </div>
+        </div>
     </div>
 </div>
-</a>
-</section>
-
-<section class="w3-container w3-third w3-section">
-<div class="w3-card-4 w3-white w3-round-xlarge">
-    <video controls muted style="max-height: 100%; max-width: 100%;">
-    <source src="media/PCG Video.mp4" type="video/mp4">
-    </video>
-    <a href="projects.html#pcg">
-    <div class="w3-container">
-    <h4>PCG Galaxy Scene</h4>
-    <p>A PCG Galaxy scene created using unity and 3D models I created to depict a scene of scavengers after a battle in an asteroid field</p>
+<div class="w3-container w3-center w3-content">
+    <h2 class="w3-xlarge">WORKING WITH</h2>
+</div>
+<!-- ACHIEVEMENT GRID -->
+<div>
+<img src="media/Working with.png" alt ="Stellar Group Walkway Academy Wasserman YM&U" style="width: 100%">
+</div>
+<!-- <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+        <img src="media/Stellar Group.png" alt="Stellar Group" style="width:100%;"> 
     </div>
-</div>
-</a>
-</section>
-</section>
+    <div class="w3-quarter">
+        <img src="media/Walkway Academy.png" alt="Walkway Academy" style="width: 100%;">
+    </div>
+    <div class="w3-quarter">
+        <img src="media/Wasserman Logo.png" alt="Wasserman Logo" style="width:100%;">
+    </div>
+    <div class="w3-quarter">
+        <img src="media/YM&U.png" alt="YM&U" style="width:100%;">
+    </div>
+</div> -->
 
-<!-- About Section -->
-<section id="about" class="w3-container w3-left">
-    <h2 class=" w3-leftbar w3-border-white w3-padding" >About </h2>
-    <p>I am Games Computing graduate and i made this site as a way to display my acheivements and projects. Most of these projects are games 
-        some using the game engine unity and C# others using SDL, OpenGL and C++.
-        Games are a passion of mine as you can see as they are the majority of my projects designing or creating doesnt matter i always enjoy it.
-        However recently I been looking to expand my coding langauge and have decided to start with HTML and CSS as you can see from this site. 
-        This is just the start I will continue to improve and develop new languages and you can keep up to date with my different project here.</p>
-</section>
+<footer class="w3-container w3-center">
+<p class="w3-tiny">&copy; SPI SPORTS PERFORMANCE 2019. ALL RIGHTS RESERVED</p>
 
-<!-- Contact Me  -->
-<section id="contact" class="w3-container w3-left">
-    <h2 class=" w3-leftbar w3-border-white w3-padding" >Contact Me </h2>
-    <p>You can get in contact with me by sending me an email at <b>Danny.Dietzman@ntlworld.com</b></p>
-    <p>Or from one of my social medias below</p>
-    <!--Not sure what social i want to add -->
-    <div class="w3-bar w3-padding">
-        <a href="https://www.linkedin.com/in/daniel-dietzman-b3a64a163/" target="_blank" class="w3-bar-item w3-button">
-        <i class="fab fa-linkedin w3-xlarge" ></i>
-        <p>Linkedin</p>
-        </a>
-        <a href="https://www.instagram.com/thedietzdan/" target="_blank" class="w3-bar-item w3-button">
-        <i class="fab fa-instagram w3-xlarge"></i>
-        <p>Instagram</p>
-        </a>
-        <a href="#" target="_blank" class="w3-bar-item w3-button">
-        <i class="fab fa-facebook w3-xlarge"></i>
-        <p>Facebook</p>
-        </a>
-        <a href="https://twitter.com/TheDietZDan" target="_blank" class="w3-bar-item w3-button">
-        <i class="fab fa-twitter w3-xlarge"></i>
-        <p>Twitter</p>
-        </a>
-    </div> 
-</section>
-</div>
+</footer>
+<!-- SOCIAL BAR BUTTON METHOD -->
+<!-- <script>
+
+var Shown = 0;
+
+function Open(){
+    if(Shown == 0)
+    {
+    document.getElementById("bar").style.width = "100px";
+    document.getElementById("button").style.marginRight="70%";
+    document.getElementById("icon").className ="fas fa-angle-right";
+    document.getElementById("sidebar").style.display="block";
+    /* TIME OUT BUT IT STACKS ON BUTTON PRESSES
+    setTimeout(function(){
+        document.getElementById("bar").style.width = "32px";
+        document.getElementById("button").style.marginRight="0";
+        document.getElementById("icon").className ="fas fa-angle-left";
+        sidebar.style.display="none";
+        Shown = 0;
+    }, 10000)
+    */
+    Shown = 1;
+    }
+    else
+    {
+        document.getElementById("bar").style.width = "32px";
+        document.getElementById("button").style.marginRight="0";
+        document.getElementById("icon").className ="fas fa-angle-left";
+        document.getElementById("sidebar").style.display="none";
+        Shown = 0;
+    }
+}
+</script> -->
 </body>
-
 </html>
